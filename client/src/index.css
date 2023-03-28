@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@font-face {
+  font-family: "Samatic";
+  src: url("./assets/fonts/Somatic-Rounded.otf") format("opentype");
+}
+body, html {
+  /*background: #262735;*/
+  /*background: #323447;*/
+  /*color: white;*/
+  color: #00144f;
+  font-family: 'Lexend', sans-serif;
+}
+
+.wave {
+  z-index: -10;
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-left: -1750px;
+  margin-top: -2150px;
+  border-radius: 40%;
+  background: #9E48FF;
+  /*background: rgb(86,106,255);*/
+  /*background: linear-gradient(45deg, rgba(86,106,255,1) 0%, rgba(205,50,255,1) 100%);*/
+
+  animation: wave 20s infinite linear;
+  animation-direction: reverse;
+}
+
+.wave2 {
+  z-index: -20;
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -1750px;
+  margin-top: -2150px;
+  border-radius: 40%;
+  background: #9E48FF;
+  filter: brightness(90%);
+  /*background: rgb(86,106,255);*/
+  /*background: linear-gradient(45deg, rgba(86,106,255,1) 0%, rgba(205,50,255,1) 100%);*/
+
+  animation: wave 18s infinite linear;
+}
+.wave3 {
+  z-index: -30;
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  top: 103%;
+  left: 53%;
+  margin-left: -1750px;
+  margin-top: -2150px;
+  border-radius: 43%;
+  background: #9E48FF;
+  filter: brightness(80%);
+  /*background: rgb(86,106,255);*/
+  /*background: linear-gradient(45deg, rgba(86,106,255,1) 0%, rgba(205,50,255,1) 100%);*/
+
+  animation: wave 15s infinite linear;
+  animation-direction: reverse;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
